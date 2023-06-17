@@ -2,7 +2,6 @@ const router = require("express").Router();
 const { Product, Category, Tag, ProductTag } = require("../../models");
 
 // The `/api/products` endpoint
-// TODO:
 // get all products
 router.get("/", async (req, res) => {
   // find all products
@@ -16,7 +15,6 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
-// TODO:
 // get one product
 router.get("/:id", async (req, res) => {
   // find a single product by its `id`
@@ -35,7 +33,6 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-// TODO:
 // create new product
 router.post("/", (req, res) => {
   /* req.body should look like this...
